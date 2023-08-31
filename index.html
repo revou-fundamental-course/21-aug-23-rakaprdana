@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portofolio Website</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="profile.html">OUR PROFILE</a></li>
+      <li><a href="#contact">MESSAGE US</a></li>
+    </ul>
+    
+  </nav>
+  
+  <header>
+    <h1 id="welcome"><span id="name">Nama</span></h1>
+    <div>
+      <img src="assets/SKY NEXT (2).png" alt="deskripsi" class="gambar">
+    </div>
+  </header>
+  <div class="about">
+    <h2>ABOUT</h2>
+      Pengalaman pertama saya dalam membuat portofolio website adalah salah satu momen yang penuh tantangan dan pembelajaran. 
+    <br>Saat itu, saya baru saja memulai perjalanan dalam dunia pengembangan web dan ingin memiliki tempat untuk menampilkan
+    <br>karya-karya saya kepada dunia.
+    <br>
+    <br>Saat saya mulai membangun halaman-halaman portofolio, saya merasa terkadang frustrasi karena saya masih harus belajar 
+    <br>banyak hal tentang kode HTML, CSS, dan bahasa pemrograman lainnya. Tetapi, saya terus mencoba, belajar dari tutorial online, 
+    <br>dan mencari solusi atas setiap masalah yang muncul.
+    <br>
+    <br>Setelah berhari-hari kerja keras, portofolio website saya akhirnya selesai. Saya merasa bangga dengan pencapaian ini dan 
+    <br>senang bisa menampilkan proyek-proyek saya kepada teman-teman, kolega, dan calon klien. Pengalaman pertama ini mengajarkan saya 
+    <br>tentang ketekunan, belajar mandiri, dan pentingnya membagikan karya-karya kita dengan dunia.
+  </div>
+  <section id="contact">
+    <h2>Hubungi Kami</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Nama" required>
+      <textarea id="message" placeholder="Pesan" required></textarea>
+      <button onclick="tampilkanTerimaKasih()">Submit</button>
+      <p id="hasil"></p>
+    </form>
+    <div id="form-output">
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>

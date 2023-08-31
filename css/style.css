@@ -1,0 +1,95 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+text-decoration: none;
+}
+
+
+body {
+    font-family:'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul  {
+    list-style: none;
+    display:flex ;
+    height: 50px;
+    background-color: #333;
+    bottom: 10px;
+  }
+  
+  nav li {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  nav li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 70%;
+    left: 0;
+    transition: 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: blueviolet;
+  }
+  
+  nav li:hover{
+    color: #ffff;
+  }
+
+  nav li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header {
+    background-color: #020111;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  .gambar {
+    width: 90%;
+    height: auto;
+    
+  }
+   
+  .about {
+    margin-top: 3%;
+    margin-left: 2%;  
+  }
+  #contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column ;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  #form-output {
+    margin-top: 20px;
+  }
